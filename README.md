@@ -34,23 +34,15 @@ JOB-TRACKER/
 
 ## ⚙️ Kurulum
 
-Projeyi klonla:
+Aşağıdaki adımları takip ederek projeyi çalıştırabilirsiniz:
 
 ```bash
-````
 git clone https://github.com/Hakan-Deger/job-application-tracker.git
 cd job-application-tracker
 
 python -m venv venv
-
 venv\Scripts\activate
 
 pip install -r requirements.txt
 
 uvicorn app:app --reload
-
-http://127.0.0.1:8000
-
-http://127.0.0.1:8000/docs
-
-
