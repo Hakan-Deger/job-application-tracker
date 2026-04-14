@@ -30,12 +30,14 @@ JOB-TRACKER/
     ├── index.html
     ├── style.css
     └── script.js
+````
 
 ## ⚙️ Kurulum
 
 Projeyi klonla:
 
 ```bash
+````
 git clone https://github.com/Hakan-Deger/job-application-tracker.git
 cd job-application-tracker
 
