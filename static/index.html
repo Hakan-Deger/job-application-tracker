@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Tracker</title>
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Job Application Tracker</h1>
+        <p class="subtitle">Staj ve iş başvurularını takip et</p>
+
+        <div class="card">
+            <h2>Yeni Başvuru Ekle</h2>
+
+            <form id="applicationForm">
+                <div class="grid">
+                    <input type="text" id="company_name" placeholder="Şirket adı" required />
+                    <input type="text" id="role_title" placeholder="Pozisyon" required />
+                    <input type="text" id="location" placeholder="Lokasyon" />
+                    <input type="number" id="salary_expectation" placeholder="Maaş beklentisi" />
+                    <input type="date" id="application_date" required />
+
+                    <select id="status">
+                        <option value="saved">saved</option>
+                        <option value="applied">applied</option>
+                        <option value="interview">interview</option>
+                        <option value="offer">offer</option>
+                        <option value="rejected">rejected</option>
+                    </select>
+
+                    <input type="email" id="contact_email" placeholder="İletişim e-postası" />
+                </div>
+
+                <textarea id="notes" placeholder="Notlar"></textarea>
+
+                <button type="submit">Başvuru Ekle</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <div class="header-row">
+                <h2>Başvurular</h2>
+                <button id="refreshBtn" type="button">Yenile</button>
+            </div>
+
+            <div id="applicationsList" class="applications-list"></div>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
